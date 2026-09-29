@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: soc-copilot
+    runtime: node
+    plan: free
+    buildCommand: ""
+    startCommand: node server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: AUTH_REQUIRED
+        value: "true"
+      - key: DEMO_MODE
+        value: "true"
+      - key: DEMO_PERSIST_WRITES
+        value: "false"
+      - key: ALLOW_CLOUD_CASE_CONTEXT
+        value: "true"
+      - key: ANTHROPIC_API_KEY
+        sync: false
