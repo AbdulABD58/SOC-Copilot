@@ -1,0 +1,13 @@
+{
+  "name": "soc-copilot-product-edition",
+  "version": "9.2.0",
+  "private": true,
+  "description": "Final competition edition of SOC Copilot with authenticated access, contextual analyst chat, evidence-led verdict guidance, client-specific SOPs, exports, integration hub, audit and shift handoff",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node smoke-test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
